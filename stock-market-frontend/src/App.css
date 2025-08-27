@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    background-color: #10182f; /* deep finance blue */
+    color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+.App {
+    text-align: center;
+    padding: 32px;
+}
+h1 {
+    color: #00c49a; /* vibrant green for titles */
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+h2 {
+    color: #fad648; /* gold accent for section headers */
+    margin-top: 36px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #171e35;
+    color: #f5f6fa;
+    padding: 13px 18px;
+    margin: 14px 0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(16,24,47,0.08);
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+li.positive {
+    border-left: 5px solid #24e07d; /* green for rising stocks */
+}
+li.negative {
+    border-left: 5px solid #e8444a; /* red for falling stocks */
+}
+li:hover {
+    background-color: #222b45;
+}
+button {
+    background-color: #00c49a;
+    color: #10182f;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,196,154,0.15);
+}
+button:hover {
+    background-color: #fad648;
+    color: #171e35;
+}
+nav {
+    background-color: #171e35;
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(16, 24, 47, 0.1);
+}
+nav a {
+    color: #fad648;
+    text-decoration: none;
+    margin: 0 26px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #00c49a;
+}
+/* Add some dashboard feedback, e.g. for up/down stocks */
+.up {
+    color: #24e07d;
+    font-weight: bold;
+}
+.down {
+    color: #e8444a;
+    font-weight: bold;
+}
+footer {
+    margin-top: 48px;
+    padding: 18px 0;
+    background-color: #171e35;
+    color: #f5f6fa;
+    font-size: 0.9rem;
+}
